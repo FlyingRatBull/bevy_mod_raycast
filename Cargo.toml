@@ -9,14 +9,14 @@ repository = "https://github.com/aevyrie/bevy_mod_raycast/"
 keywords = ["gamedev", "graphics", "bevy", "3d", "raycast"]
 categories = ["game-engines", "rendering"]
 
-[dependencies]
-bevy = { git = "https://github.com/bevyengine/bevy", branch = "main", version = "0.5", default-features = false, features = ["render"] }
+[dependencies.bevy]
+git = "https://github.com/bevyengine/bevy.git"
+rev = "7d0e98f34c43eb62522c0c65de64f7b458b899be"
+default-features = false
+features = ["render"]
 
-[dev-dependencies]
-bevy = { git = "https://github.com/bevyengine/bevy", branch = "main", version = "0.5", default-features = false, features = [
-    "render",
-    "bevy_wgpu",
-    "bevy_winit",
-    "bevy_gltf",
-    "x11",
-] }
+[dev-dependencies.bevy]
+git = "https://github.com/bevyengine/bevy.git"
+rev = "7d0e98f34c43eb62522c0c65de64f7b458b899be"
+default-features = false
+features = ["render", "bevy_wgpu", "bevy_winit", "bevy_gltf", "x11"]
